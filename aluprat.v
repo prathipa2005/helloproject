@@ -74,4 +74,5 @@ case (s)
     endcase // End of case structure .
     if(!out_y) flags[1] = 1; // set zero flag if output is zero
     end
+
 endmodule
