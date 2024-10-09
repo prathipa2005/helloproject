@@ -61,6 +61,7 @@ case (s)
     4'd10: out_y ={8'd0, ~( a_in | b_in )}; // Bitwise NOR
     4'd11: out_y ={8'd0, ~( a_in ^ b_in )}; // Bitwise XNOR
     4'd12: begin
+
         flags[0] = a_in[7]; // Update carry flag
         out_y = {8'd0 , (a_in<<1)}; // Shift Left
     end
